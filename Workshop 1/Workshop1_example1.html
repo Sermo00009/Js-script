@@ -13,12 +13,70 @@
 
     <!-- script tag is where Javascript goes to -->
     <script>
-        for (var i = 0; i < 400; i++) {
-            console.log("This round is " + i);
+        var arr = [];
+        for (var i = 0; i < 15; i++) {
+            var numero = Math.floor(Math.random() * 100) + 1;
+
+            console.log("Kierros " + i + ": " + numero);
+            document.write("<p> Kierros: " + numero + "</p>");
+
         }
-        window.alert("Hello")
-        document.write("Hi")
-        console.log("Hello console")
+        console.log("Ready");
+        var a = 5;
+        var b = 10;
+        function addNumbers(a, b) {
+            return a + b;
+        }
+        if (a + b > 100) {
+            alert("Huomio, luku on yli 100");
+
+        }
+        document.write("<h2> Summa on " + addNumbers(a, b) + "</h2>");
+        console.log(addNumbers(a, b));
+
+        // Define an object to hold person data
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            email: "ggg@gmail.com",
+            phone: "555-5555",
+            age: "50",
+            eyeColor: "blue",
+
+            printInfo: function () {
+                console.log("First Name: " + this.firstName);
+                console.log("Last Name: " + this.lastName);
+                console.log("Email: " + this.email);
+                console.log("Phone: " + this.phone);
+                console.log("Age: " + this.age);
+                console.log("Eye Color: " + this.eyeColor);
+            }
+        };
+        person.printInfo();
+
+        var person1 = {
+            firstName: "John",
+            lastName: "Doe"
+        };
+
+        var person2 = {
+            firstName: "Sirkka",
+            lastName: "Seppälä"
+        };
+
+        var person3 = {
+            firstName: "Aleksi",
+            lastName: "Johansson"
+        };
+
+        var person4 = {
+            firstName: "Liisa",
+            lastName: "Nieminen"
+        };
+        var people = [person1, person2, person3, person4];
+        for (var i = 0; i < people.length; i++) {
+            console.log("First Name: " + people[i].firstName + ", Last Name: " + people[i].lastName);
+        }
     </script>
 
 </head>
