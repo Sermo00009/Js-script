@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Yksinkertainen sivu</title>
+</head>
+
+
+<body>
+
+<script>
+
+let vastaus = confirm("Oletko opiskelija?");
+console.log("Vastaus:", vastaus);
+if (vastaus) {
+    document.write("<h1>Tervetuloa opiskelija</h1>");
+} else {
+    document.write("<h1>Valitettavasti tämä sivu on tarkoitettu vain opiskelijoille</h1>")
+}
+
+let nimi = prompt("Mikä on nimesi?");
+console.log("Nimi:", nimi);
+document.write("<h1>Tervetuloa, " + nimi + "!</h1>");
+</script>
+
+</body>
+
+</html>

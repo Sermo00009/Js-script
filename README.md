@@ -1,1 +1,1 @@
-Tässä teen web-kehitys ykkösen workshop tehtävät 1
+Tässä teen web-kehitys kurssin tehtävät.
